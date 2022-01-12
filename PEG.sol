@@ -7,14 +7,14 @@ import "./Context.sol";
 import "./Ownable.sol";
 import "./SafeMath.sol";
 
-contract PumpingElonGoat is Context, IERC20, Ownable {
+contract PumpingElonGate is Context, IERC20, Ownable {
 
     using SafeMath for uint256;
 
     mapping (address => uint256) private _balances;
     mapping (address => mapping (address => uint256)) private _allowances;
 
-    string private _name = 'PumpingElonGoat';
+    string private _name = 'PumpingElonGate';
     string private _symbol = 'PEG';
     uint8 private _decimals = 6;
     uint256 private _totalSupply = 9500000000000000000000000000 * 10**uint256(_decimals);
